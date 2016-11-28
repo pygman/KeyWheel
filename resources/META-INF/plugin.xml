@@ -30,10 +30,13 @@
 
     <actions>
         <!-- Add your actions here -->
-        <action id="ScrollFromSource" class="luonq.ScrollFromSource" text="Scroll From Source"
-                description="ScrollFromSource">
+        <action id="KeyWheelUp" class="com.pygman.keywheel.KeyWheelUp" text="Key Wheel Up"
+                description="KeyWheelUp">
             <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="EditorPopupMenu1"/>
-            <keyboard-shortcut keymap="$default" first-keystroke="alt control 1"/>
+        </action>
+        <action id="KeyWheelDown" class="com.pygman.keywheel.KeyWheelDown" text="Key Wheel Down"
+                description="KeyWheelDown">
+            <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="EditorPopupMenu1"/>
         </action>
     </actions>
 
