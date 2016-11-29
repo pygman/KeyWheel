@@ -1,17 +1,17 @@
 <idea-plugin version="2">
-    <id>com.your.company.unique.plugin.id</id>
-    <name>Plugin display name here</name>
+    <id>com.pygman.keywheel</id>
+    <name>Key Wheel</name>
     <version>1.0</version>
-    <vendor email="pygman@aliyun.com" url="http://pygman.com">YourCompany</vendor>
-
+    <vendor email="pygman@aliyun.com" url="http://pygman.com">pygman</vendor>
+    <depends>com.intellij.modules.lang</depends>
     <description><![CDATA[
-      Enter short description for your plugin here.<br>
-      <em>most HTML tags may be used</em>
+      键盘按键模拟鼠标滚轮.<br>
+      <em></em>
     ]]></description>
 
     <change-notes><![CDATA[
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>
+      <br>
+      <em></em>
     ]]>
     </change-notes>
 
@@ -33,10 +33,12 @@
         <action id="KeyWheelUp" class="com.pygman.keywheel.KeyWheelUp" text="Key Wheel Up"
                 description="KeyWheelUp">
             <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="EditorPopupMenu1"/>
+            <!--<keyboard-shortcut keymap="$default" first-keystroke="control p"/>-->
         </action>
         <action id="KeyWheelDown" class="com.pygman.keywheel.KeyWheelDown" text="Key Wheel Down"
                 description="KeyWheelDown">
             <add-to-group group-id="EditorPopupMenu" anchor="after" relative-to-action="EditorPopupMenu1"/>
+            <!--<keyboard-shortcut keymap="$default" first-keystroke="control u"/>-->
         </action>
     </actions>
 
